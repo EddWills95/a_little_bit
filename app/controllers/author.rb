@@ -4,6 +4,7 @@ ALittleBit::App.controllers :author do
 
   get :index do
     @authors = Author.all
+
     render 'index'
   end
 

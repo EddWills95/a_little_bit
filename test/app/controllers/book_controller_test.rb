@@ -36,5 +36,16 @@ describe "delete book" do
     delete "/book/destroy/1"
     Book.all.count.must_equal 0
   end
+end
 
+describe "update book" do
+  before do 
+    DatabaseCleaner.clean
+    Book.create(title: "Wind in the Willows", pages: 300)
+  end
+
+  it "updates relevant information for Book" do
+    put "book/update/1", pages: 400
+    Book.find(1).pages.must_equal 400
+  end
 end

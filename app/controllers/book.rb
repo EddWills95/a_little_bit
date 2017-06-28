@@ -14,6 +14,7 @@ ALittleBit::App.controllers :book do
   end
 
   get :index, :with => :id do
+    binding.pry
     @book = Book.find(params[:id])
     render 'book'
   end
@@ -30,6 +31,11 @@ ALittleBit::App.controllers :book do
   delete :destroy, :with => :id do
     @book = Book.find(params[:id])
     @book.delete
+  end
+
+  put :update, :with => :id do
+    @book = Book.find(params[:id])
+    @book.update(params)
   end
 
 end
