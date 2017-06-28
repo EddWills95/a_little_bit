@@ -8,7 +8,7 @@ ALittleBit::App.controllers :author do
   end
 
   post :create do
-    t = Author.new(params)
+    t = Author.new(params[:author])
     if t.save 
       redirect url_for(:author, :index)
     else
