@@ -1,11 +1,21 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../test_config.rb')
 
-describe "/main" do
+describe "/" do
   before do
-    get "/main"
+    get "/"
   end
 
   it "should return hello world text" do
-    assert_equal "Hello World", last_response.body
+    assert_match "a Little Bit", last_response.body
+  end
+end
+
+describe "/author" do 
+  before do 
+    post "/"
+  end
+
+  it "should create a new author" do
+    assert 
   end
 end
