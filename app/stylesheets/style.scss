@@ -1,0 +1,115 @@
+@import 'util';
+
+body {
+	font-family: Arial;
+}
+
+header {
+	.branding-wrap {
+		text-align: left;
+		#logotext {
+			position: relative;
+			left: -0.5rem;
+		}
+	}
+	#bulbwrap {
+		display: inline-block;
+		margin: 0 auto;
+		width: 6rem;
+		height: 6rem;
+		background-color: hotpink;
+		border-radius: 50%;
+		#bulb {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	nav {
+		ul {
+			margin-right: 5rem;
+			display: inline-block;
+			list-style: none;
+			float: right;
+			a {
+				text-decoration: none;
+				color: black;
+				text-transform: uppercase;
+			} 
+			li {
+				padding: 0.28rem;
+				display: inline-block;
+				margin: 0.25rem;
+				&:hover {
+					background-color: aqua;
+				}
+			}
+
+		}
+	}
+	#cart {
+		width: 5.5rem;
+		margin: 1rem;
+		background-color: grey;
+		border-radius: 5px;
+		line-height: 2rem;
+		#counter {
+			margin-left: 0.25rem;
+			display: inline-block;
+			height: 1.75rem;
+			width: 1.75rem;
+			background-color: #C0C0C0;
+			line-height: 1.75rem;
+			text-align: center;
+			border-radius: 50%;
+			color: white;
+			p {
+				margin: 0;
+			}
+		}
+		img {
+			display: inline-block;
+			float:right;
+			height: 2rem;
+		}
+	}
+}
+
+footer {
+	bottom: 0;
+	position: fixed;
+	width: 50%;
+	height: 7rem;
+	background-color: black;
+	color: white;
+	#footer-social {
+		ul {
+			list-style: none;
+			li {
+				height: 3rem;
+				width: 3rem;
+				line-height: 3rem;
+				text-align: center;
+				@include border-radius(50px);
+				color: white;
+				text-decoration: none;
+				float: left;
+				margin: 1rem;
+				font-size: 30px;
+				&:hover {
+					background-color: hotpink;
+				}
+			}
+		}
+	}
+	
+	p {
+		position: absolute;
+		bottom: 0;
+		right: 6rem;
+		display: inline-block;
+	}
+}
+
+
+
+
