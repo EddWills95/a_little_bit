@@ -5,17 +5,9 @@ describe "/" do
     get "/"
   end
 
-  it "should return hello world text" do
+  it "should return a little bit (of text)" do
     assert_match "a Little Bit", last_response.body
   end
 end
 
-describe "/author" do 
-  before do 
-    post "/"
-  end
 
-  it "should create a new author" do
-    assert 
-  end
-end
