@@ -16,11 +16,11 @@ describe "/author" do
   end
 end
 
-describe "/author/create" do
+describe "create author" do
   before do 
     DatabaseCleaner.clean
-    post "/author/create", first_name: "Edd", last_name: "Williams"
-    
+    binding.pry
+    post "/author", first_name: "Edd", last_name: "Williams"
   end
 
   it "should create a new author" do
