@@ -1,1 +1,19 @@
 <h1> <%= @author.first_name %> <%= @author.last_name %> </h1>
+
+<% form_for @author, url_for(:author, :update, :id => @author.id), method: 'POST' do |f| %>
+	
+	<%= f.label :first_name %>
+	<%= f.text_field :first_name %>
+
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %>
+
+	<%= f.label :bio %>
+	<%= f.text_field :bio %>
+
+	<%= f.label :dob %>
+	<%= f.text_field :dob %>
+
+	<%= f.submit %>	
+
+<% end %>

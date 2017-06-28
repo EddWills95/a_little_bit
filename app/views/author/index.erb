@@ -1,5 +1,6 @@
 <% for @author in @authors do %>
-	<h2><%= @author.first_name %> <%= @author.last_name %></h2> 
+	<h2><%= @author.first_name %> <%= @author.last_name %></h2>
+	<%= link_to 'Edit', "/author/#{@author.id}" %>
 <% end %>
 
 <h2><a href="author/new">Create Author</a></h2>
