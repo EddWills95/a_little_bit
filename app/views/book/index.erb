@@ -1,0 +1,6 @@
+<% for @book in @books do %>
+	<h2><%= @book.title %> <%= @book.author_id %></h2>
+	<%= link_to 'Edit', "/book/#{@book.id}" %>
+<% end %>
+
+<h2><a href="book/new">Create Book</a></h2>

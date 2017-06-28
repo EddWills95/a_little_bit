@@ -1,8 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/../test_config.rb')
 
-describe "Author Model" do
+describe "Book Model" do
   it 'can construct a new instance' do
-    @author = Author.new(full_name: "Albert Einstein")
-    refute_nil @author
+    @book = Book.new
+    refute_nil @book
   end
 end

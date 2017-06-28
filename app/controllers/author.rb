@@ -14,7 +14,6 @@ ALittleBit::App.controllers :author do
     else
       redirect url_for(:author, :new)
     end
-      
   end
 
   get :new do 

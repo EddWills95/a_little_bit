@@ -7,7 +7,7 @@ DatabaseCleaner.strategy = :truncation
 describe "/author" do
   before do
     DatabaseCleaner.clean
-    Author.create(first_name: "Albert", last_name: "Einstein")
+    Author.create(full_name: "Albert Einstein")
   end
 
   it "should return name of author" do
@@ -19,7 +19,7 @@ end
 describe "create author" do
   before do 
     DatabaseCleaner.clean
-    post "/author/create", first_name: "Edd", last_name: "Williams"
+    post "/author/create", full_name: "Edd Williams"
   end
 
   it "should create a new author" do
@@ -30,7 +30,7 @@ end
 describe "delete author" do
   before do 
     DatabaseCleaner.clean
-    post "/author/create", first_name: "Edd", last_name: "Williams"
+    post "/author/create", full_name: "Edd Williams"
   end
 
   it "should delete an author by ID" do 
@@ -42,7 +42,7 @@ end
 describe "update author" do
   before do
     DatabaseCleaner.clean
-    Author.create(first_name: "F. Scott", last_name: "Fitzgerald")
+    Author.create(full_name: "F. Scott Fitzgerald")
   end
 
   it "should update an author" do

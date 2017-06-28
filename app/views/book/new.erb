@@ -1,0 +1,11 @@
+<% form_for @book, url_for(:book, :create), method: 'POST' do |f| %>
+	
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+	<%= f.label :author %>
+	<%= f.select(:author_id, :collection => @authors, :fields => [:full_name, :id]) %>
+
+	<%= f.submit %>	
+
+<% end %>
