@@ -38,3 +38,15 @@ describe "delete author" do
     Author.all.count.must_equal 0 
   end 
 end
+
+describe "update author" do
+  before do
+    DatabaseCleaner.clean
+    Author.create(first_name: "F. Scott", last_name: "Fitzgerald")
+  end
+
+  it "should update an author" do
+    put "/author/update/1", bio: "Wrote the Great Gatsby"
+    Author.find(1).bio.must_equal "Wrote the Great Gatsby"
+  end
+end
