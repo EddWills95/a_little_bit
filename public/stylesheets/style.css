@@ -30,7 +30,7 @@ header nav ul {
     display: inline-block;
     margin: 0.25rem; }
     header nav ul li:hover {
-      background-color: aqua; }
+      background-color: hotpink; }
 header #cart {
   width: 5.5rem;
   margin: 1rem;

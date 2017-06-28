@@ -8,7 +8,7 @@ ALittleBit::App.controllers :author do
   end
 
   post :create do
-    t = Author.new(params[:author])
+    t = Author.new(params)
     if t.save 
       redirect url_for(:author, :index)
     else
@@ -27,5 +27,11 @@ ALittleBit::App.controllers :author do
     render 'author'
   end
 
+  delete :destroy, :with => :id do 
+    @author = Author.find(params[:id])
+    @author.delete
 
+    @authors = Author.all
+    redirect 'index' 
+  end
 end

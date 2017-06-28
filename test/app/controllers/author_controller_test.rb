@@ -26,3 +26,15 @@ describe "create author" do
     Author.all.count.must_equal 1
   end
 end
+
+describe "delete author" do
+  before do 
+    DatabaseCleaner.clean
+    post "/author/create", first_name: "Edd", last_name: "Williams"
+  end
+
+  it "should delete an author by ID" do 
+    delete "/author/destroy/1"
+    Author.all.count.must_equal 0 
+  end 
+end
