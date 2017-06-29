@@ -9,13 +9,15 @@ header .branding-wrap {
 header #bulbwrap {
   display: inline-block;
   margin: 0 auto;
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   background-color: hotpink;
   border-radius: 50%; }
   header #bulbwrap #bulb {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 2rem;
+    margin-top: 0.25rem; }
 header nav ul {
   margin-right: 5rem;
   display: inline-block;
