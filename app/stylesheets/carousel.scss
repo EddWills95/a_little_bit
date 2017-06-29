@@ -8,7 +8,31 @@
 		top: 50%;
 		right: 0;
 		z-index: 10000;
+	}
+	
+	#bubbles {
+		z-index: 10000;
+		position: absolute;
+		top: 2rem;
+		right: 3rem;
+		.bubble { 
+			margin: 0.25rem;
+			display: inline-block;
+			height:1rem;
+			width: 1rem;
+			border-radius: 50px;
+			background-color: grey;
+			&:hover {
+				background-color: white;
+				-webkit-transform: scale(1.5); 
+      			-ms-transform: scale(1.5); 
+          		transform: scale(1.5);
+          		-webkit-transition-duration: 0.25s;
+    			transition-duration: 0.25s;
+			}
 		}
+	}
+
 	.slide {
 		position: absolute;
 		display: inline-block;
