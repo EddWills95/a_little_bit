@@ -10,10 +10,9 @@
 }
 
 .border-bottom {
-	margin-bottom: 1rem;
+	padding: 0.5rem;
 	border-bottom: 1px solid;
 }
-
 
 #left-col {
 	.heading {
@@ -36,8 +35,6 @@
 		img {
 			margin-top: 0.5rem;
 			height: 3rem;
-			
-
 		}
 	}
 	article {
@@ -48,6 +45,53 @@
 				width: 90%;
 			}
 		}
-		
 	}
+}
+
+#right-col {
+	.social-banner {
+		height: 5rem;
+		padding: 0.5rem;
+		.social-banner-wrap {
+			padding: 0.5rem;
+			.logo {
+				vertical-align: middle;
+				line-height: 5rem;
+				color: white;
+				display: inline-block;
+				background-color: blue;
+				height: 4rem;
+				width: 4rem;
+				text-align: center;
+				border-radius: 5px;
+				i {
+					font-size: 2.5rem;
+				}
+			}
+			.social-text {
+				vertical-align: middle;
+				margin-left: 0.5rem;
+				width: 80%;
+				display: inline-block;
+				h4 {
+					display: inline-block;
+					margin: 0; 
+				}
+				span {
+					color: grey;
+				}
+				p {
+					display: inline-block;
+					margin: 0;
+				}
+			}
+	}
+	}
+	.border {
+			border-bottom: 1px solid;
+		}
 }	
+
+.col {
+	height: 70vh;
+}
