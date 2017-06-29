@@ -1,5 +1,5 @@
 #home-carousel {
-	height: 60vh;
+	height: 35rem;
 	width: 100%;
 	background-color: red;
 }
@@ -98,22 +98,47 @@
 }	
 
 .col {
-	height: 50vh;
+	height: 30rem;
 	position: relative;
+	input[type=button] {
+		position: absolute;
+		right: 10px;
+	}
 }
 
 #more-bits {
 	.more-bits-bottom{
-		height: 30vh;
+		position: relative;
+		height: 15rem;
 		width: 100%;
 		background-color: lightgrey;
+		img {
+			padding: 0.5rem;
+			display: inline-block;
+			height: 14rem;
+		}
+		.more-bits-text {
+			margin-top: 1rem;
+			vertical-align: top;
+			display: inline-block;
+			width: 60%;
+			h1 {
+				margin: 0;
+				margin-bottom: 0.5rem;
+			}
+			p {
+				margin: 0;
+			}
+			input[type=button] {
+				position: absolute;
+				bottom: 0.5rem;
+				right: 0.5rem;
+			}
+		}
 	}
 }
 
-input[type=button] {
-	position: absolute;
-	right: 10px;
-}
+
 
 
 
