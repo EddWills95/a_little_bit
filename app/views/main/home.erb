@@ -1,9 +1,22 @@
 <%= stylesheet_link_tag 'index' %>
+<%= stylesheet_link_tag 'carousel' %>
+<%= stylesheet_link_tag 'animate' %>
 
 <div class="grid">
 	<div class="column col-8-of-8">
-		<section id="home-carousel">
-			<h2>This is the carousel</h2>
+		<section id="carousel-container">
+			<input type="button" value="next" id="nextButton"> 
+			<script src="javascripts/carousel.js">
+			</script>
+			<div class="slide animated" style="background-color: blue">
+				<h2>This 1</h2>
+			</div>
+			<div class="slide animated" style="background-color: red">
+				<h2>This 2</h2>
+			</div>
+			<div class="slide animated" style="background-color: yellow">
+				<h2>This 3</h2>
+			</div>
 		</section>	
 	</div>
 </div> 
@@ -29,7 +42,7 @@
 	</div>
 	<div class="column col-4-of-8" id="right-col">
 		<section class="border-top border-bottom col">
-			<h1>Whats being said</h1>
+			<h1 id="social-head">Whats being said...</h1>
 			<div class="social-banner border">
 				<div class="social-banner-wrap">
 					<div class="logo twitter">

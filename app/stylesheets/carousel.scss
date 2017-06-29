@@ -1,0 +1,21 @@
+#carousel-container {
+	margin-top: 2rem;
+	position: relative;
+	height: 35rem;
+	width: 100%;
+	input[type=button] {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 10000;
+		}
+	.slide {
+		position: absolute;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		h2 {
+			margin: 0;
+		}
+	}
+}

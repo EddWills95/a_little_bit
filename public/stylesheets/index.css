@@ -1,8 +1,3 @@
-#home-carousel {
-  height: 35rem;
-  width: 100%;
-  background-color: red; }
-
 .border-top {
   margin-top: 1rem;
   border-top: 1px solid; }
@@ -17,7 +12,8 @@
 #left-col h1 {
   display: inline-block;
   margin: 0;
-  width: 60%; }
+  width: 60%;
+  margin-left: 0.5rem; }
 #left-col #ebook-logo {
   display: inline-block;
   height: 4rem;
@@ -35,6 +31,8 @@
   #left-col article .img-background img {
     width: 90%; }
 
+#right-col #social-head {
+  margin-left: 1rem; }
 #right-col .social-banner {
   height: 5rem;
   padding: 0.5rem; }
