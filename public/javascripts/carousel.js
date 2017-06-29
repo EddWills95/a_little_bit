@@ -4,7 +4,10 @@ var countUp = true;
 var slides = document.getElementsByClassName('slide');
 var bubbles = []; 
 
-setInterval(increment, 4000);
+setInterval(function() {
+	increment(),
+	setTimeout(resetSlides, 2000);
+	}, 7000);
 
 window.onload = function() {
 	generateBubbles();
@@ -13,11 +16,13 @@ window.onload = function() {
 	resetSlides(index);
 }
 
-function resetSlides(current) {
+function resetSlides() {
+	console.log("resetting");
 	for(var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
+		slides[i].className = "slide animated";
 	}
-	slides[current].style.display = "block";
+	slides[index].style.display = "block";
 }
 
 function generateBubbles() {
