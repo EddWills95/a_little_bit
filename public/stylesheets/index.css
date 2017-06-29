@@ -1,6 +1,10 @@
 #home-carousel {
-  height: 120vh;
+  height: 80vh;
   width: 100%;
   background-color: red; }
+
+.border-top {
+  margin-top: 1rem;
+  border-top: 1px solid; }
 
 /*# sourceMappingURL=index.css.map */
