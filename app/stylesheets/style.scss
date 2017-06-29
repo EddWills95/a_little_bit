@@ -78,8 +78,8 @@ header {
 
 footer {
 	bottom: 0;
-	position: fixed;
-	width: 50%;
+	margin-top: 1rem;
+	width: 100%;
 	height: 7rem;
 	background-color: black;
 	color: white;
@@ -105,9 +105,10 @@ footer {
 	}
 	
 	p {
-		position: absolute;
-		bottom: 0;
-		right: 6rem;
+		color: lightgrey;
+		margin: 0;
+		margin-left: 6rem;
+		bottom: 0.3rem;
 		display: inline-block;
 	}
 }
