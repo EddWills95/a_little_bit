@@ -1,4 +1,5 @@
 #carousel-container {
+  overflow: hidden;
   margin-top: 2rem;
   position: relative;
   height: 35rem;
@@ -27,6 +28,13 @@
         transform: scale(1.5);
         -webkit-transition-duration: 0.25s;
         transition-duration: 0.25s; }
+    #carousel-container #bubbles .bubble-grow {
+      background-color: white;
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition-duration: 0.25s;
+      transition-duration: 0.25s; }
   #carousel-container .slide {
     position: absolute;
     display: inline-block;

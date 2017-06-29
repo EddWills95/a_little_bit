@@ -1,34 +1,20 @@
-window.onload = function() {
-	loadCarousel();
-	slides[0].style.display = "block";
+var index = 0;
+var countUp = true;
 
-	generateBubbles();
-}
 var slides = document.getElementsByClassName('slide');
+var bubbles = []; 
 
-function loadCarousel() {
-	var index = 0;
+setInterval(autoChange, 2000);
 
+window.onload = function() {
+	generateBubbles();
+	slides[0].style.display = "block";
+	bubbles[index].classList.toggle('bubble-grow');
 	resetSlides(index);
-
-	// document.getElementById('nextButton').addEventListener("click", function() {
-	// 	slides[index].classList.add('fadeOutRight');
-
-		
-
-	// 	if (index == slides.length - 1) {
-	// 		index = 0;
-	// 	} else {
-	// 		index++;
-	// 	}
-
-	// 	slides[index].style.display = "block";
-	// 	slides[index].classList.add('fadeInLeft');
-
-	// });
 }
 
 function resetSlides(current) {
+
 	for(var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
@@ -43,7 +29,34 @@ function generateBubbles() {
 	for(var i = 0; i < quantity; i++) {
 		var newBubble = document.createElement('DIV');
 		newBubble.classList.add('bubble');
+		bubbles.push(newBubble);
 		bubbleContainer.append(newBubble);
 	}
 }
+
+function autoChange() {
+	console.log(index);
+	var top = slides.length - 1;
+
+	if(index < top && countUp == true) {
+		index++;
+		if (index == top) {
+			countUp = false;
+		}
+	} else if (countUp == false) {
+		index--;
+		if (index == 0) {
+			countUp = true;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 
