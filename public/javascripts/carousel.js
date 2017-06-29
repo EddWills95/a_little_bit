@@ -4,17 +4,16 @@ var countUp = true;
 var slides = document.getElementsByClassName('slide');
 var bubbles = []; 
 
-setInterval(autoChange, 2000);
+setInterval(increment, 4000);
 
 window.onload = function() {
 	generateBubbles();
+	bubbles[index].classList.add('bubble-grow');
 	slides[0].style.display = "block";
-	bubbles[index].classList.toggle('bubble-grow');
 	resetSlides(index);
 }
 
 function resetSlides(current) {
-
 	for(var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
@@ -34,27 +33,53 @@ function generateBubbles() {
 	}
 }
 
-function autoChange() {
-	console.log(index);
+function resetBubbles() {
+	for(var i = 0; i < bubbles.length; i++) {
+		bubbles[i].className = "bubble";
+	}
+}
+
+function slideOutLeft(index) {
+	slides[index].classList.toggle('slideOutLeft');
+}
+
+function slideInRight(index) {
+	slides[index].style.display = "block";
+	slides[index].classList.toggle('slideInRight');
+}
+
+function slideOutRight(index) {
+	slides[index].classList.toggle('slideOutRight');
+}
+
+function slideInLeft(index) {
+	slides[index].style.display = "block";
+	slides[index].classList.toggle('slideInLeft');
+}
+
+
+function increment() {
+
 	var top = slides.length - 1;
 
 	if(index < top && countUp == true) {
+		slideOutLeft(index);
 		index++;
+		slideInRight(index);
 		if (index == top) {
 			countUp = false;
 		}
 	} else if (countUp == false) {
+		slideOutRight(index); 
 		index--;
+		slideInLeft(index); 
 		if (index == 0) {
 			countUp = true;
 		}
 	}
+	resetBubbles();
+	bubbles[index].classList.add('bubble-grow');
 }
-
-
-
-
-
 
 
 
