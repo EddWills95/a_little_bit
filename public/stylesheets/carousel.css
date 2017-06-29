@@ -16,8 +16,8 @@
     #carousel-container #bubbles .bubble {
       margin: 0.25rem;
       display: inline-block;
-      height: 1rem;
-      width: 1rem;
+      height: 0.75rem;
+      width: 0.75rem;
       border-radius: 50px;
       background-color: grey; }
       #carousel-container #bubbles .bubble:hover {

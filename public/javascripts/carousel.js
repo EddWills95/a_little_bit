@@ -38,8 +38,12 @@ function resetSlides(current) {
 function generateBubbles() {
 	var quantity = slides.length;
 
+	var bubbleContainer = document.getElementById('bubbles');
+
 	for(var i = 0; i < quantity; i++) {
-		
+		var newBubble = document.createElement('DIV');
+		newBubble.classList.add('bubble');
+		bubbleContainer.append(newBubble);
 	}
 }
 
