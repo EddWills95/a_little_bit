@@ -1,6 +1,6 @@
 <h1> <%= @author.full_name %> </h1>
 
-<% form_for @author, url_for(:author, :update, :id => @author.id), method: 'POST' do |f| %>
+<% form_for @author, url_for(:author, :update, :id => @author.id), method: 'put' do |f| %>
 	
 	<%= f.label :full_name %>
 	<%= f.text_field :full_name %>

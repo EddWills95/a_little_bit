@@ -8,6 +8,9 @@
 	<%= f.label :author %>
 	<%= f.select(:author_id, :collection => @authors, :fields => [:full_name, :id]) %>
 
+	<%= f.label :blurb %>
+	<%= f.text_field :blurb %> 
+
 	<%= f.label :ebook_price %>
 	<%= f.number_field :ebook_price %>
 

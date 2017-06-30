@@ -37,9 +37,9 @@ ALittleBit::App.controllers :author do
 
   put :update, :with => :id do
     @author = Author.find(params[:id])
-    @author.update(params)
+    @author.update(params[:author])
 
-    redirect 'index'
+    redirect '/author' 
   end
 
 end
