@@ -12,7 +12,15 @@
 
 			<script src="javascripts/carousel.js">
 			</script>
-			<div class="slide animated" style="background-color: blue">
+			
+			<% for @book in @books do %>
+				<div class="slide animated">
+					<h1><%= @book.title %> </h1>
+					<h4><%= @book.author.full_name %> </h4>
+				</div>
+			<% end %>
+
+			<!-- <div class="slide animated" style="background-color: blue">
 				<h2>This 1</h2>
 			</div>
 			<div class="slide animated" style="background-color: red">
@@ -20,7 +28,7 @@
 			</div>
 			<div class="slide animated" style="background-color: yellow">
 				<h2>This 3</h2>
-			</div>
+			</div> -->
 		</section>	
 	</div>
 </div> 

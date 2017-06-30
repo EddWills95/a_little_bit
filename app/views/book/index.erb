@@ -2,8 +2,8 @@
 <div class="column col-8-of-8">
 
 <% for @book in @books do %>
-	<h2><%= @book.title %> <%= @book.author_id %></h2>
-	<p><%= @book.pages %> </p>
+	<h2><%= @book.title %> // <%= @book.author.full_name %></h2>
+	<p>Pages: <%= @book.pages %> </p>
 	<%= link_to 'Edit', "/book/#{@book.id}" %>
 <% end %>
 
