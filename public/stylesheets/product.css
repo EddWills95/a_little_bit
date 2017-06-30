@@ -29,7 +29,8 @@
         display: inline-block; }
 
 #info {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border-bottom: 1px solid; }
   #info #additional-info {
     border-radius: 10px;
     height: 9rem;
@@ -52,5 +53,31 @@
 .border-bottom {
   height: 10rem;
   border-bottom: 1px solid; }
+
+#quotes {
+  border-bottom: 1px solid;
+  height: 15rem; }
+  #quotes .quote-content::before {
+    content: "\201D";
+    /*Unicode for Left Double Quote*/
+    vertical-align: top;
+    margin-right: 1.5rem;
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    height: 15rem; }
+  #quotes .quote-content blockquote {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    width: 80%;
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px; }
+    #quotes .quote-content blockquote p {
+      color: #999; }
 
 /*# sourceMappingURL=product.css.map */

@@ -66,9 +66,44 @@
 			float: left;
 		}
 	}
+	border-bottom: 1px solid;
 }
 
 .border-bottom {
 	height: 10rem;
 	border-bottom: 1px solid;
+}
+
+#quotes {
+	border-bottom: 1px solid;
+	height: 15rem;
+	.quote-content {
+		&::before{
+			content: "\201D"; /*Unicode for Left Double Quote*/
+			vertical-align: top;
+			margin-right: 1.5rem;
+
+
+			/*Font*/
+			font-family: Georgia, serif;
+			font-size: 60px;
+			font-weight: bold;
+			color: #999;
+			height:15rem;
+		}
+		blockquote{
+			vertical-align: top;
+			display:inline-block;
+			margin: 0;
+			position: relative;
+			width: 80%;
+
+			/*Font*/
+			font-family: Georgia, serif;
+			font-size: 16px;
+			p {
+				color: #999; 
+			}
+		}
+	}
 }
