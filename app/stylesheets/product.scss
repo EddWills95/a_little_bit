@@ -1,0 +1,39 @@
+#product-main {
+	margin-top: 1rem;
+	width: 100%; 
+	.main-title-author {
+		h1 {
+			margin: 0;
+		}
+	}
+	.main-image {
+		text-align: center;
+	}
+	.price-blob {
+		display: flex;
+		align-items: center;
+		height: 4rem;
+		background-color: lightgrey;
+		border-radius: 10px;
+		img {
+			margin-right: 0.5rem;
+			height: 100%;
+		}
+		.pricing-text {
+			vertical-align: center;
+			display: inline-block;
+			position: relative;
+			height: 3rem;
+			width: 60%;
+			h2 {
+				width: 6rem;
+				margin: 0;
+				display: inline-block;
+			}
+			p {
+				margin: 0;
+				display: inline-block;
+			}
+		}
+	}
+}

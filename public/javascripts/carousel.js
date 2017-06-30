@@ -17,7 +17,6 @@ window.onload = function() {
 }
 
 function resetSlides() {
-	console.log("resetting");
 	for(var i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 		slides[i].className = "slide animated";

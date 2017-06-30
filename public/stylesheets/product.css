@@ -1,0 +1,31 @@
+#product-main {
+  margin-top: 1rem;
+  width: 100%; }
+  #product-main .main-title-author h1 {
+    margin: 0; }
+  #product-main .main-image {
+    text-align: center; }
+  #product-main .price-blob {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: lightgrey;
+    border-radius: 10px; }
+    #product-main .price-blob img {
+      margin-right: 0.5rem;
+      height: 100%; }
+    #product-main .price-blob .pricing-text {
+      vertical-align: center;
+      display: inline-block;
+      position: relative;
+      height: 3rem;
+      width: 60%; }
+      #product-main .price-blob .pricing-text h2 {
+        width: 6rem;
+        margin: 0;
+        display: inline-block; }
+      #product-main .price-blob .pricing-text p {
+        margin: 0;
+        display: inline-block; }
+
+/*# sourceMappingURL=product.css.map */

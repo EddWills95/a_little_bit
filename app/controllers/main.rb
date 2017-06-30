@@ -4,6 +4,11 @@ ALittleBit::App.controllers :main do
 
   get :index, :map => '/' do
     render 'home'
-  end  
+  end 
+
+  get :product, :map => '/product' do
+    render 'product'
+  end 
 
 end
+1
