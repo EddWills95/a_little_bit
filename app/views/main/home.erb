@@ -1,6 +1,4 @@
-<%= stylesheet_link_tag 'index' %>
-<%= stylesheet_link_tag 'carousel' %>
-<%= stylesheet_link_tag 'animate' %>
+<%= stylesheet_link_tag 'index', 'carousel', 'animate' %>
 
 <div class="grid">
 	<div class="column col-8-of-8">
@@ -15,20 +13,16 @@
 			
 			<% for @book in @books do %>
 				<div class="slide animated">
-					<h1><%= @book.title %> </h1>
-					<h4><%= @book.author.full_name %> </h4>
+					<div class="title-author">
+						<h1><%= @book.title %> </h1><br>
+						<h4><%= @book.author.full_name %> </h4>
+					</div>
+					<img src=<%= "#{@book.coverImg}" %>>
+					<a href=<%= "/#{@book.id}" %>/>
+						<input type="button" value="More">
+					</a>
 				</div>
 			<% end %>
-
-			<!-- <div class="slide animated" style="background-color: blue">
-				<h2>This 1</h2>
-			</div>
-			<div class="slide animated" style="background-color: red">
-				<h2>This 2</h2>
-			</div>
-			<div class="slide animated" style="background-color: yellow">
-				<h2>This 3</h2>
-			</div> -->
 		</section>	
 	</div>
 </div> 

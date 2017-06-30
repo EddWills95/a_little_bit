@@ -40,7 +40,17 @@
     display: inline-block;
     height: 100%;
     width: 100%; }
-    #carousel-container .slide h2 {
-      margin: 0; }
+    #carousel-container .slide .title-author {
+      position: absolute;
+      top: 0; }
+      #carousel-container .slide .title-author h1 {
+        text-align: left;
+        display: inline-block;
+        margin: 0; }
+      #carousel-container .slide .title-author h4 {
+        text-align: left;
+        display: inline-block; }
+    #carousel-container .slide img {
+      margin-left: 20rem; }
 
 /*# sourceMappingURL=carousel.css.map */

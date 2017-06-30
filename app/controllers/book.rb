@@ -34,6 +34,7 @@ ALittleBit::App.controllers :book do
   end
 
   put :update, :with => :id do
+
     @book = Book.find(params[:id])
     @book.update(params[:book])
     redirect '/book'

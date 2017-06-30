@@ -2,9 +2,7 @@
 <html>
 <head>
 	<title>a Little Bit</title>
-	<link href="stylesheets/grid.css" rel="stylesheet">
-	<link href="stylesheets/style.css" rel="stylesheet">
-	<link href="stylesheets/button.css" rel="stylesheet">
+	<%= stylesheet_link_tag 'grid', 'style', 'button' %>
 	<link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -15,9 +13,9 @@
 			<div class="branding-wrap">
 				<a href="/">
 					<div id="bulbwrap">
-						<img src="images/bulb.png" alt="Bulb" id="bulb">
+						<%= image_tag 'bulb.png', :id => 'bulb'  %>
 					</div>
-					<img src="images/alb-logotype.png" alt="Logo" id="logotext">
+					<%= image_tag 'alb-logotype.png'%>
 				</a>
 			</div>
 		</div>

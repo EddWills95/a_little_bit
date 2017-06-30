@@ -47,8 +47,23 @@
 		display: inline-block;
 		height: 100%;
 		width: 100%;
-		h2 {
-			margin: 0;
+		
+		.title-author {
+			position: absolute;
+			top: 0;
+			h1 {
+				text-align: left;
+				display: inline-block;
+				margin: 0;
+			}
+			h4 {
+				text-align: left;
+				display: inline-block;
+			}
 		}
+		img {
+			margin-left: 20rem;
+		}
+		
 	}
 }
