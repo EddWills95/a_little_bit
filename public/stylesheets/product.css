@@ -80,4 +80,9 @@
     #quotes .quote-content blockquote p {
       color: #999; }
 
+#more-bits .bit {
+  text-align: center; }
+  #more-bits .bit img {
+    width: 50%; }
+
 /*# sourceMappingURL=product.css.map */
