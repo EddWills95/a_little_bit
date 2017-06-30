@@ -37,3 +37,28 @@
 		}
 	}
 }
+
+#info {
+	#additional-info {
+		border-radius: 10px;
+		height: 9rem;
+		margin-top: 1rem;
+		background-color: lightgrey;
+		.inner-text {
+			padding: 1.15rem;
+			h4 {
+				margin: 0;
+				margin-bottom: 0.5rem;
+			}
+			h5 {
+				font-size: 1rem;
+				text-decoration: bold;
+				margin: 0;
+			}
+			p {
+				margin: 0;
+			}
+		}
+		
+	}
+}
