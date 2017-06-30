@@ -39,13 +39,14 @@
 }
 
 #info {
+	margin-top: 1rem;
 	#additional-info {
 		border-radius: 10px;
 		height: 9rem;
 		margin-top: 1rem;
 		background-color: lightgrey;
 		.inner-text {
-			padding: 1.15rem;
+			padding: 1rem;
 			h4 {
 				margin: 0;
 				margin-bottom: 0.5rem;
@@ -58,7 +59,16 @@
 			p {
 				margin: 0;
 			}
-		}
-		
+		}	
 	}
+	#about-author {
+		img {
+			float: left;
+		}
+	}
+}
+
+.border-bottom {
+	height: 10rem;
+	border-bottom: 1px solid;
 }
