@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag 'style' %>
+
 <% form_for @book, url_for(:book, :create), method: 'POST' do |f| %>
 	
 	<%= f.label :title %>

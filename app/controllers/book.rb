@@ -14,7 +14,7 @@ ALittleBit::App.controllers :book do
   end
 
   get :index, :with => :id do
-    binding.pry
+    @authors = Author.all
     @book = Book.find(params[:id])
     render 'book'
   end
@@ -35,7 +35,8 @@ ALittleBit::App.controllers :book do
 
   put :update, :with => :id do
     @book = Book.find(params[:id])
-    @book.update(params)
+    @book.update(params[:book])
+    redirect '/book'
   end
 
 end

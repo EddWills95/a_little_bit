@@ -1,1 +1,24 @@
+<%= stylesheet_link_tag 'style' %>
+
 <h1> <%= @book.title %> <%= @book.author.full_name %> </h1>
+
+<% form_for(@book, url_for(:book, :update, :id => @book.id), method: 'put') do |f| %>
+	
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+	<%= f.label :author %>
+	<%= f.select(:author_id, :collection => @authors, :fields => [:full_name, :id]) %>
+
+	<%= f.label :ebook_price %>
+	<%= f.number_field :ebook_price %>
+
+	<%= f.label :paper_price %>
+	<%= f.number_field :paper_price %>
+
+	<%= f.label :pages %>
+	<%= f.number_field :pages %>
+
+	<%= f.submit %>	
+
+<% end %>
