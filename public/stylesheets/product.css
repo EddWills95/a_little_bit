@@ -48,7 +48,9 @@
       #info #additional-info .inner-text p {
         margin: 0; }
   #info #about-author img {
-    float: left; }
+    float: left;
+    height: 8rem;
+    margin-right: 0.5rem; }
 
 .border-bottom {
   height: 10rem;

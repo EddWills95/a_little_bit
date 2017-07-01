@@ -11,7 +11,6 @@ var ticker = setInterval(function() {
 
 window.onload = function() {
 	generateBubbles();
-	generatePlayPause();
 	bubbles[index].classList.add('bubble-grow');
 	slides[0].style.display = "block";
 	resetSlides(index);
@@ -30,49 +29,19 @@ function generateBubbles() {
 
 	var bubbleContainer = document.getElementById('bubbles');
 
+	function findSelf(bub){
+			return bub == self
+		}
+
 	for(var i = 0; i < quantity; i++) {
 		var newBubble = document.createElement('DIV');
 		newBubble.classList.add('bubble');
 		bubbles.push(newBubble);
+
 		bubbleContainer.append(newBubble);
 	}
 }
 
-function generatePlayPause() {
-	var play = document.createElement('DIV');
-	var pause = document.createElement('DIV');
-	var playpausecontainer = document.getElementById('play-pause');
-
-	addClass(play);
-	addClass(pause);
-
-	play.classList.toggle('active');
-
-	pause.addEventListener("click", function() {
-		clearInterval(ticker);
-		console.log("should pause")
-		this.classList.toggle('active');
-	});
-
-	play.addEventListener("click", function() {
-		setInterval(function() {
-			increment(),
-			setTimeout(resetSlides, 2000);
-		}, 7000);
-		this.classList.toggle('active');		
-	});
-
-	play.innerHTML = "<i class='fa fa-play' aria-hidden='true'></i>"
-	pause.innerHTML = "<i class='fa fa-pause' aria-hidden='true'></i>"
-
-	playpausecontainer.append(play);
-	playpausecontainer.append(pause);
-
-	function addClass(div) {
-		div.className = "butts";
-	}
-
-}
 
 function resetBubbles() {
 	for(var i = 0; i < bubbles.length; i++) {

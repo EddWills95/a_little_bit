@@ -8,7 +8,7 @@
 				<h2><i>by <%= @product.author.full_name %></i></h2>
 			</div>
 			<div class="main-image">
-				<%= image_tag('product.jpg') %>
+				<img src= <%= "#{@product.bannerImg}" %>> 
 			</div>
 			<div class="grid">
 				<div class="column col-3-of-8 offset-2-of-8">
@@ -56,7 +56,7 @@
 		</div>
 		<div id="about-author">
 			<h2>About the Author</h2>
-			<%= image_tag('einstein.jpg') %>
+			<img src=<%= "#{@product.author.portrait}" %>
 			<h5><%= @product.author.full_name %> </h5>
 			<p><%= @product.author.bio %> </p>
 			<h5 style="text-decoration: bold">Born on:<%= @product.author.dob %></h5>

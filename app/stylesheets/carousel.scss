@@ -38,27 +38,6 @@
 		}
 	}
 
-	#play-pause {
-		position: absolute;
-		bottom: 1rem;
-		left: 1rem;
-		z-index: 10000;
-		.butts {
-			display: inline-block;
-			margin: 0.4rem;
-			color: white;
-			background-color: grey;
-			width: 2rem;
-			height: 2rem;
-			line-height: 2rem;
-			text-align: center;
-			@include border-radius(5px);
-		}
-		.active {
-			background-color: red;
-		}
-	}
-
 	.slide {
 		background-color: lightgrey;
 		position: absolute;
@@ -68,7 +47,8 @@
 		
 		.title-author {
 			position: absolute;
-			top: 0;
+			top: 3rem;
+			left: 3rem;
 			h1 {
 				text-align: left;
 				display: inline-block;
@@ -80,7 +60,9 @@
 			}
 		}
 		img {
+			position: absolute;
 			margin-left: 20rem;
+			top: 2rem;
 		}
 		
 	}
