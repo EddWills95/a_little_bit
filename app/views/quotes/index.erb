@@ -1,0 +1,13 @@
+<div class="grid">
+<div class="column col-8-of-8">
+
+<% for @quote in @quotes do %>
+	<h2><%= @quote.title %> // <%= @quote.author.full_name %></h2>
+	<p>Pages: <%= @quote.pages %> </p>
+	<%= link_to 'Edit', "/quote/#{@quote.id}" %>
+<% end %>
+
+<h2><a href="quote/new">Create Book</a></h2>
+
+</div>
+</div>
