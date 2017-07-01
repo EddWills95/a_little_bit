@@ -37,12 +37,13 @@
 			-webkit-transform: scale(1.5); 
   			-ms-transform: scale(1.5); 
       		transform: scale(1.5);
-      		-webkit-transition-duration: 0.25s;
-			transition-duration: 0.25s;
+      		-webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
 		}
 	}
 
 	.slide {
+		background-color: lightgrey;
 		position: absolute;
 		display: inline-block;
 		height: 100%;
