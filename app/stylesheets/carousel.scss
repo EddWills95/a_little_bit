@@ -1,3 +1,5 @@
+@import 'util';
+
 #carousel-container {
 	overflow: hidden;
 	margin-top: 2rem;
@@ -25,20 +27,14 @@
 			background-color: grey;
 			&:hover {
 				background-color: white;
-				-webkit-transform: scale(1.5); 
-      			-ms-transform: scale(1.5); 
-          		transform: scale(1.5);
-          		-webkit-transition-duration: 0.25s;
-    			transition-duration: 0.25s;
+				@include scale-transform(1.5);
+          		@include transition-time(0.25s);
 			}
 		}
 		.bubble-grow {
 			background-color: white;
-			-webkit-transform: scale(1.5); 
-  			-ms-transform: scale(1.5); 
-      		transform: scale(1.5);
-      		-webkit-transition-duration: 0.4s;
-			transition-duration: 0.4s;
+			@include scale-transform(1.5);
+      		@include transition-time(0.25s);
 		}
 	}
 

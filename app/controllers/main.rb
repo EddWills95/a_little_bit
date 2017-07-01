@@ -6,7 +6,7 @@ ALittleBit::App.controllers :main do
     @books = Book.all
     render 'home'
   end 
-
+  
   get :index, :map => '/', :with => :id do 
     @product = Book.find(params[:id])
     render 'product'
