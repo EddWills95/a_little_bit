@@ -6,8 +6,8 @@
   width: 100%; }
   #carousel-container input[type=button] {
     position: absolute;
-    top: 50%;
-    right: 0;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 10000; }
   #carousel-container #bubbles {
     z-index: 10000;
@@ -33,8 +33,28 @@
       -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
       transform: scale(1.5);
-      -webkit-transition-duration: 0.4s;
-      transition-duration: 0.4s; }
+      -webkit-transition-duration: 0.25s;
+      transition-duration: 0.25s; }
+  #carousel-container #play-pause {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 10000; }
+    #carousel-container #play-pause .butts {
+      display: inline-block;
+      margin: 0.4rem;
+      color: white;
+      background-color: grey;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+    #carousel-container #play-pause .active {
+      background-color: red; }
   #carousel-container .slide {
     background-color: lightgrey;
     position: absolute;

@@ -1,9 +1,11 @@
+@import 'util';
+
 input[type=button] {
 	font-size: 15px; 
 	color: white;
 	background-color: red;
 	width: 3.5rem;
 	height: 2rem;
-	border-radius: 5px;
+	@include border-radius (5px);
 	border: 0;
 }

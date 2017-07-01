@@ -4,6 +4,9 @@ input[type=button] {
   background-color: red;
   width: 3.5rem;
   height: 2rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px;
   border: 0; }
 

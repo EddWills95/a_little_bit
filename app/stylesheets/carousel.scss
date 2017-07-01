@@ -8,8 +8,8 @@
 	width: 100%;
 	input[type=button] {
 		position: absolute;
-		top: 50%;
-		right: 0;
+		bottom: 2rem;
+		right: 2rem;
 		z-index: 10000;
 	}
 	
@@ -35,6 +35,27 @@
 			background-color: white;
 			@include scale-transform(1.5);
       		@include transition-time(0.25s);
+		}
+	}
+
+	#play-pause {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		z-index: 10000;
+		.butts {
+			display: inline-block;
+			margin: 0.4rem;
+			color: white;
+			background-color: grey;
+			width: 2rem;
+			height: 2rem;
+			line-height: 2rem;
+			text-align: center;
+			@include border-radius(5px);
+		}
+		.active {
+			background-color: red;
 		}
 	}
 
